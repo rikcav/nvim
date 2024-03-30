@@ -61,3 +61,5 @@ vim.opt.guifont = "monospace:h17"
 vim.opt.termguicolors = true
 
 vim.opt.shortmess:append "c"
+
+vim.opt.shell = "/bin/fish"

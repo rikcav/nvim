@@ -44,7 +44,7 @@ keymap("n", "<leader>n", "<cmd>NvimTreeToggle<cr>", opts)
 
 -- Telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>df", "<cmd>Telescope file_browser<cr>", opts)
+keymap("n", "<leader>df", "<cmd>Telescope file_browser<cr><esc>", opts)
 keymap("n", "<C-f>", "<cmd>Telescope file_browser<cr>", opts)
 keymap("n", "<leader>gf", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>bf", "<cmd>Telescope buffers<cr>", opts)

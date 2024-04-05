@@ -2,10 +2,14 @@ local opts = { noremap = true, silent = true }
 -- local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
+-- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+-- Light/dark mode
+keymap("n", "<leader>wm", "<cmd>set background=light<cr>", opts)
+keymap("n", "<leader>dm", "<cmd>set background=dark<cr>", opts)
 
 -- Save
 keymap("n", "<C-s>", "<cmd>w<cr>", opts)

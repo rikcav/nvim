@@ -18,6 +18,10 @@ keymap("n", "<A-s>", "<cmd>w<cr>", opts)
 -- Select all
 keymap("n", "<leader>aa", "ggVG", opts)
 
+-- Spell checking
+keymap('n', "<leader>psc", "<cdm>setlocal spell spellang=pt_br", opts)
+keymap('n', "<leader>esc", "<cdm>setlocal spell spellang=en_us", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", "<cmd>resize +2<cr>", opts)
 keymap("n", "<C-Down>", "<cmd>resize -2<cr>", opts)

@@ -19,8 +19,8 @@ keymap("n", "<A-s>", "<cmd>w<cr>", opts)
 keymap("n", "<leader>aa", "ggVG", opts)
 
 -- Spell checking
-keymap('n', "<leader>psc", "<cdm>setlocal spell spellang=pt_br", opts)
-keymap('n', "<leader>esc", "<cdm>setlocal spell spellang=en_us", opts)
+keymap('n', "<leader>psc", "<cmd>setlocal spell spelllang=pt_br<cr>", opts)
+keymap('n', "<leader>esc", "<cmd>setlocal spell spelllang=en_us<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", "<cmd>resize +2<cr>", opts)

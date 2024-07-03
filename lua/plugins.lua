@@ -129,6 +129,11 @@ return packer.startup(function(use)
 
   use "lewis6991/gitsigns.nvim"
 
+  use {'akinsho/git-conflict.nvim', tag = "*", config = function()
+    require('git-conflict').setup()
+  end}
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   if PACKER_BOOTSTRAP then
     require("packer").sync()

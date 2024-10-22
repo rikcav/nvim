@@ -1,7 +1,7 @@
 local lspconfig = require("lspconfig")
 local null_ls = require("null-ls")
 
-lspconfig.tsserver.setup({
+lspconfig.ts_ls.setup({
   on_attach = function(client, bufnr)
     client.server_capabilities.document_formatting = false
     vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>fm", "<cmd>lua vim.lsp.buf.format({ async = true })<cr>", {})
